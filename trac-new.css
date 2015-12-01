@@ -1,0 +1,47 @@
+@-moz-document url-prefix("http://trac.fifty-five.com/trac2") {
+body { 
+    background: #f7f7f7; color: #000; margin: 10px; padding: 0; 
+}
+body, th, tr {
+    font-size: 19px;
+    font-family: monospace,serif;
+
+}
+
+#search input           { font-size: 13px; }
+.nav ul                 { font-size: 12px; }
+.threading              { font-size: 90%; }
+.trac-nav, .trac-topnav { font-size: 90%; }
+.inlinebuttons input    { font-size: 95%; }
+#ticket table.properties td,#ticket table.properties th { font-size: 100%; }
+
+:link, :visited, dt em, .milestone .info h2 em,
+#metanav form.trac-logout button,
+#content.report h3 a em,
+#content.build h2.config :link, #content.build h2.config :visited,
+.plugin h3 a {
+ color: #D14841;
+}
+/* To change red of the source path in browser, we need an extra rule to reset the grey (#998) of the first element */
+#content.browser h1 :link, #content.browser h1 :visited {
+ color: #D14841;
+}
+#content.browser h1 .first:link, #content.browser h1 .first:visited {
+ color: #998;
+}
+
+input[type=text], input.textwidget, textarea {
+    border: 1px solid #d7d7d7;
+    font-size: 20px;
+    
+}
+
+table.listing tbody td, table.listing tbody th {
+    border: 1px dotted #ddd;
+    padding: .3em .5em;
+    vertical-align: top;
+     color: #999999;    
+}
+
+
+}
