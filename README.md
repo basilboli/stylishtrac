@@ -1,5 +1,5 @@
 # stylishtrac
-Restyling of trac system to make it a little bit more readable
+Restyling trac (http://trac.edgewall.org) system to make it a little bit more readable.
 
 # Before 
 ![alt tag](https://raw.githubusercontent.com/basilboli/stylishtrac/master/before.png)
