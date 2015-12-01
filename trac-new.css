@@ -32,6 +32,7 @@ body, th, tr {
 input[type=text], input.textwidget, textarea {
     border: 1px solid #d7d7d7;
     font-size: 20px;
+    color : grey;
     
 }
 
@@ -40,4 +41,57 @@ table.listing tbody td, table.listing tbody th {
     padding: .3em .5em;
     vertical-align: top;
      color: #999999;    
+}
+
+h1, h2 {
+    font-size: 18px;
+    color: grey;
+}
+
+input[type=submit]{
+text-align:center;
+text-decoration: none;
+font-family: sans-serif;
+-webkit-font-smoothing: antialiased;
+font-size: 80%;
+color: #FFF;
+background: #0CADA7;
+padding: 2px 6px;
+display: inline-block;
+white-space: nowrap;
+-webkit-border-radius: 5px;
+-moz-border-radius: 5px;
+border-radius: 5px;
+margin: 10px 0;
+-webkit-transition: all 0.2s ease-in-out;
+-ms-transition: all 0.2s ease-in-out;
+-moz-transition: all 0.2s ease-in-out;
+-o-transition: all 0.2s ease-in-out;
+transition: all 0.2s ease-in-out;
+}
+input[type=submit]:hover {
+background: #0A948F;
+}
+
+#mainnav :link, #mainnav :visited {
+    background: url(../dots.gif) 0 0 no-repeat;
+    border-right: none;
+    border-bottom: none;
+    border-left: none;
+    font-size: 14px;
+    color: grey;
+    padding: .2em 20px;
+}
+
+select {
+	background: transparent;
+}
+
+
+#ticket table.properties th{
+    font-size: 60%;
+}
+
+#ticket table.properties td {
+    font-size: 60%;
 }
