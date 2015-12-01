@@ -9,4 +9,7 @@ Restyling of trac system to make it a little bit more readable
 
 
 # How to use 
-Use your new trac style with https://userstyles.org.
+1. Install https://userstyles.org plugin on your browser
+2. Activate new style for your trac site
+3. Copy and paste trac-new.css to style editor
+4. Enjoy!
