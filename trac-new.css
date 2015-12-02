@@ -84,6 +84,8 @@ background: #0A948F;
 
 select {
 	background: transparent;
+    font-size: 100%;
+    color : grey;
 }
 
 
@@ -98,10 +100,6 @@ select {
 
 #mainnav > ul > li:nth-child(3) > a, #mainnav > ul > li:nth-child(4) > a, #mainnav > ul > li:nth-child(5) > a, #prefs, #query {
     display : none;
-}
-
-#metanav {
-visibility: hidden;
 }
 
 table.code td {
@@ -120,4 +118,8 @@ table.code td {
     padding: 1px 2px;
     vertical-align: top;
     color : #666666;
+}
+
+#comment {
+    	color : #555;
 }
