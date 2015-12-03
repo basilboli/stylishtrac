@@ -1,125 +1,280 @@
 body { 
-    background: #f7f7f7; color: #000; margin: 10px; padding: 0; 
-}
-body, th, tr {
-    font-size: 19px;
-    font-family: monospace,serif;
-
+    background: white; color: #000; margin: 20px;
 }
 
-#search input           { font-size: 13px; }
-.nav ul                 { font-size: 12px; }
-.threading              { font-size: 90%; }
-.trac-nav, .trac-topnav { font-size: 90%; }
-.inlinebuttons input    { font-size: 95%; }
-#ticket table.properties td,#ticket table.properties th { font-size: 100%; }
-
-:link, :visited, dt em, .milestone .info h2 em,
-#metanav form.trac-logout button,
-#content.report h3 a em,
-#content.build h2.config :link, #content.build h2.config :visited,
-.plugin h3 a {
- color: #D14841;
-}
-/* To change red of the source path in browser, we need an extra rule to reset the grey (#998) of the first element */
-#content.browser h1 :link, #content.browser h1 :visited {
- color: #D14841;
-}
-#content.browser h1 .first:link, #content.browser h1 .first:visited {
- color: #998;
+#banner {
+    float: left;
+    clear: both;
+    line-height: 42px;
+    margin: 0 0 0 20px;
 }
 
-input[type=text], input.textwidget, textarea {
-    border: 1px solid #d7d7d7;
-    font-size: 20px;
-    color : grey;
-    
+#banner img {
+	height: 100%;
 }
 
-table.listing tbody td, table.listing tbody th {
-    border: 1px dotted #ddd;
-    padding: .3em .5em;
-    vertical-align: top;
-     color: #999999;    
+#banner #header {
+	display: none;
 }
 
-h1, h2 {
-    font-size: 18px;
-    color: grey;
+#banner ul .first {
+	display: none;
 }
 
-input[type=submit]{
-text-align:center;
-text-decoration: none;
-font-family: sans-serif;
--webkit-font-smoothing: antialiased;
-font-size: 80%;
-color: #FFF;
-background: #0CADA7;
-padding: 2px 6px;
-display: inline-block;
-white-space: nowrap;
--webkit-border-radius: 5px;
--moz-border-radius: 5px;
-border-radius: 5px;
-margin: 10px 0;
--webkit-transition: all 0.2s ease-in-out;
--ms-transition: all 0.2s ease-in-out;
--moz-transition: all 0.2s ease-in-out;
--o-transition: all 0.2s ease-in-out;
-transition: all 0.2s ease-in-out;
-}
-input[type=submit]:hover {
-background: #0A948F;
+#banner {
+	text-align: left;
 }
 
-#mainnav, #mainnav :link, #mainnav :visited {
-    background: none;
-    border: none;
-    font-family: monospace,serif;
+#banner *{
+    vertical-align: baseline;   
+}
+
+#banner form {
+	display: inline-block;
+}
+
+#banner form input[type=submit]{
+	border: 0;
+    background: #333;
+    padding: 4px 10px;
+    color: white;
+    text-transform: uppercase;
+}
+
+#banner form input[type=text]{
+    padding: 4px 10px;
+    outline: none;
+}
+
+#banner #metanav {
+	display: inline-block;
+}
+
+#banner #metanav ul{
+	padding: 0;
+}
+
+#banner #metanav li{
+	display:none;
+    border: 0;
+}
+
+#banner #metanav li:nth-child(2),
+#banner #metanav li:nth-child(3){
+	display: inline;
+}
+
+#banner #metanav a{
+    border: 0;
+    text-transform: uppercase;
+}
+
+
+
+
+
+
+
+
+
+#mainnav{
+ 	background: #F2F2F2;
+    border: 0;
+    margin: 20px 0;
+    line-height: 40px;
+    text-transform: uppercase;
+    font-family: Arial!important;
     font-size: 14px;
-    color: grey;
-    padding: .2em 20px;
 }
 
-select {
-	background: transparent;
-    font-size: 100%;
-    color : grey;
+#mainnav ul{
+    font-size: 12px;
 }
 
 
-#ticket table.properties th{
-    font-size: 60%;
+#mainnav li{
+ 	border-right: 0!important;
 }
 
-#ticket table.properties td {
-    font-size: 60%;
+#mainnav li.active a{
+    color: #000!important;
+}
+
+#mainnav a{
+ 	background: #F2F2F2!important;
+    color: #999!important;
+ 	border-right: 0!important;
+ 	border-left: 0!important;
+    font-weight: bold;
+    padding: 0 10px!important;
+}
+
+#mainnav a:hover{
+ 	background: #F2F2F2!important;
+    color: #333!important;
+ 	border-right: 0!important;
+ 	border-left: 0!important;
 }
 
 
-#mainnav > ul > li:nth-child(3) > a, #mainnav > ul > li:nth-child(4) > a, #mainnav > ul > li:nth-child(5) > a, #prefs, #query {
-    display : none;
+
+
+
+
+
+
+h1{
+ 	text-transform: uppercase;
 }
 
-table.code td {
-    font: normal 11px monospace;
-    overflow: hidden;
-    padding: 1px 2px;
-    vertical-align: top;
-    font-size: 16px;
-    color : #666666;
+h2.report-result{
+ 	border: 0;
+    background: white;
+    margin: 50px 0 0 0;
 }
 
-.diff table.trac-diff td {
-    background: #fff;
-    font-size: 16px;
-    overflow: visible;
-    padding: 1px 2px;
-    vertical-align: top;
-    color : #666666;
+
+
+
+
+
+
+
+table.listing tr,
+table.listing tr a{
+    line-height: 30px;
 }
 
-#comment {
-    	color : #555;
+table.listing tr:hover{
+ 	background: #F2F2F2!important;
+}
+
+table.listing tr,
+table.listing tr td{
+    border-color: #333!important;
+}
+
+table.listing .trac-columns th {
+    background: #333;
+    border: 1px solid #333;
+}
+
+table.listing .trac-columns th a {
+    color: white;
+}
+
+
+
+
+
+
+table.listing.reports tr,
+table.listing.reports tr a{
+    line-height: 30px;
+}
+
+table.listing.reports tr:hover{
+ 	background: #F2F2F2!important;
+}
+
+table.listing.reports tr,
+table.listing.reports tr td{
+    border-color: #333!important;
+}
+
+table.listing.reports th {
+    background: #333;
+    border: 1px solid #333;
+}
+
+table.listing.reports th a {
+    color: white;
+}
+
+
+
+
+
+
+#content.ticket {
+	width: 80%;
+    max-width: 1000px;
+}
+
+#ticket{
+    background: #F2F2F2;
+    border: 1px solid #CCC;
+    padding: 20px;
+    margin: 30px 0 20px 0;
+}
+
+#ticket .summary{
+    border-bottom: 1px solid #333!important;
+	line-height: 35px;
+    padding: 0 0 15px 0;
+}
+
+#ticket .date{
+    color: #999;
+    text-align: right;
+}
+
+#ticket .properties{
+    border-top: 0!important;
+}
+
+#ticket .properties th{   
+    color: #333!important;
+    font-size: 12px!important;
+}
+
+#ticket .description{
+    border-top: 1px solid #333;
+    margin: 20px 0 0 0;
+}
+
+#ticket .description h3,
+#ticket .description form{
+    display: none;
+}
+
+
+#attachments > div,
+#changelog,
+#modify {
+    border: 1px solid #CCC!important;
+    padding: 20px;
+    background: #F2F2F2;
+    margin: 0 0 40px 0;
+}
+
+#modify th,
+#modify legend {
+ 	display: none;   
+}
+
+#modify textarea {
+	resize: vertical;
+    padding: 15px;
+    box-sizing: border-box;
+    margin: 10px 0 0 0!important;
+    outline: none;
+}
+
+#modify fieldset,
+#modify table {
+    border: 0;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#modify fieldset#properties{
+    border-bottom: 1px solid #333;
+    margin: 0 0 20px 0;
+    padding: 0 0 20px 0;
+}
+
+#modify .trac-resizable{
+    margin: 0 0 10px 0;
 }
